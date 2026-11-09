@@ -1,0 +1,15 @@
+<resources>
+    <string name="sms_review_channel">Transaction review</string>
+    <string name="sms_review_channel_description">Review newly detected incoming transaction alerts</string>
+    <string name="sms_review_private">Transaction awaiting review</string>
+    <string name="sms_review_title">Transaction needs review</string>
+    <string name="sms_money_out">Money out</string>
+    <string name="sms_money_in">Money in</string>
+    <string name="sms_check_direction">Check direction</string>
+    <string name="sms_check_amount">Check amount</string>
+    <string name="sms_select_account">Select account</string>
+    <string name="sms_account_ending">Account ending %1$s</string>
+    <string name="sms_confirm_details">Confirm captured details before saving</string>
+    <string name="sms_review_action">Review</string>
+    <string name="sms_later_action">Later</string>
+</resources>

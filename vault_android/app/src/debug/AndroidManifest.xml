@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Developer prototype only. Production SMS requires Google Play approval. -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application>
+        <activity android:name=".presentation.sms.SmsReviewActivity"
+            android:exported="false" android:excludeFromRecents="true" android:taskAffinity=""
+            android:theme="@style/Theme.Vault.SmsReview" android:windowSoftInputMode="adjustResize" />
+        <receiver android:name=".data.sms.notifications.SmsPromptActionReceiver" android:exported="false" />
+        <receiver android:name=".data.sms.FinancialSmsReceiver" android:exported="true" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter><action android:name="android.provider.Telephony.SMS_RECEIVED" /></intent-filter>
+        </receiver>
+    </application>
+</manifest>
